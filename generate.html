@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Image</title>
+    <script>
+        function displayRandomImages() {
+            var images = ['like.jpg', 'dislike.jpg', 'stop.jpg'];
+            for (var i = 1; i <= 3; i++) {
+                var image = images[Math.floor(Math.random() * images.length)];
+                document.getElementById('image' + i).src = image;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="displayRandomImages()">Display Random Images</button>
+    <br><br>
+    <img id="image1" src="">
+    <img id="image2" src="">
+    <img id="image3" src="">
+</body>
+</html>
